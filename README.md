@@ -1,0 +1,2 @@
+# Pandemic-Warrior
+In these dire times of the pandemic, there is a lot of misinformation and sheer lack of information because of various factors like lack of research and complexity of the COVID-19 disease.  To address this issue, we have created an app called Pandemic Warrior.  We promise to deliver information, guidance and assistance to general public and medical authorities alike with this integrated package with 14 modules.
