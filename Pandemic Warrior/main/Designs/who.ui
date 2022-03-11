@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame{background: rgb(36, 31, 49);
+border-radius:30px;}
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none; 
+	background-color: rgb(61, 56, 70);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(190, 190, 190);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	
+	background-color: rgb(238, 255, 145);
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(238, 255, 145);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(200, 200, 200);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(200, 200, 200);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal {
+	border: none; 
+	background-color: rgb(61, 56, 70);
+    height: 14px;
+    margin: 0px 15px 0px 15px;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR HORIZONTAL */
+QScrollBar::handle:horizontal {	
+	background-color: rgb(190, 190, 190);
+	min-width: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:horizontal:hover{	
+	background-color: rgb(238, 255, 145);
+}
+QScrollBar::handle:horizontal:pressed {	
+	background-color: rgb(238, 255, 145);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:horizontal {
+	border: none;
+	background-color: rgb(200, 200, 200);
+	width: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: left;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:hover {	
+	background-color: rgb(238, 255, 145);
+}
+QScrollBar::sub-line:horizontal:pressed {	
+	background-color: rgb(238, 255, 145);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:horizontal{
+	border: none;
+	background-color: rgb(200, 200, 200);
+	width: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:hover {	
+	background-color: rgb(238, 255, 145);
+}
+QScrollBar::add-line:horizontal:pressed {	
+	background-color: rgb(238, 255, 145);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+	background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background: none;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_minimize_3">
+          <property name="minimumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>17</width>
+            <height>17</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Minimize</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 170, 0);
+}
+QPushButton:hover {	
+	background-color: rgba(255, 170, 0, 150);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_close_3">
+          <property name="minimumSize">
+           <size>
+            <width>16</width>
+            <height>16</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>17</width>
+            <height>17</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>Close</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:hover {		
+	background-color: rgba(255, 0, 0, 150);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="styleSheet">
+         <string notr="true">color:white;
+background: rgba(191, 64, 64, 0);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="lineWidth">
+         <number>5</number>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>8</number>
+          </property>
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="rightMargin">
+           <number>8</number>
+          </property>
+          <property name="bottomMargin">
+           <number>13</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>9</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTextBrowser" name="textBrowser">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>1200</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOn</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="lineWrapColumnOrWidth">
+             <number>-1</number>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Garuda'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#fffe81;&quot;&gt;WHO GUIDELINES ON Coronavirus Disease&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; color:#fffe81;&quot;&gt;(COVID-19)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; January 2020: WHO statement on novel coronavirus in Thailand &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;23&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;rd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; January 2020: Statement on the first meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV) &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; January 2020: Statement on the second meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV) &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; February 2020: US$675 million needed for new coronavirus preparedness and response global plan &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; February 2020: World experts and funders set priorities for COVID-19 research &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;27&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; February 2020: A Joint Statement on Tourism and COVID-19 UNWTO and WHO Call for Responsibility and Coordination &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2020: UN releases US$15 million to help vulnerable countries battle the spread of the coronavirus &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 7&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2020: WHO statement on cases of COVID-19 surpassing 100,000 &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 10&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2020: IFRC, UNICEF and WHO issue guidance to protect children and support safe school operations &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 13&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2020: WHO, UN Foundation and partners launch first-of-its-kind COVID-19 Solidarity Response Fund &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 24&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2020: Ensuring continuity of TB services during the COVID-19 pandemic &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 30&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2020: WHO releases guidelines to help countries maintain essential health services during the COVID-19 pandemic &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 6&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2020: WHO and Global Citizen announce: ‘One World: Together at home’ Global Special to support healthcare workers in the fight against the COVID-19 pandemic  &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 7&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2020: WHO lists two COVID-19 tests for emergency use &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2020: Public Statement for collaboration on COVID-19 vaccine development  &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 20&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2020: ITU-WHO Joint Statement: Unleashing information technology to defeat COVID-19  &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; May 2020: Statement on the third meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV) &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; May 2020: WHO: People living longer and healthier lives, but COVID-19 threatens to throw progress off track  &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 21&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; May 2020: WHO and UNHCR join forces to improve health services for refugees, displaced and stateless people &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; June 2020: COVID-19 significantly impacts health services for noncommunicable diseases &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;16&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th &lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;June 2020: WHO welcomes preliminary results about dexamethasone use in treating critically ill COVID-19 patients &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; July 2020: WHO discontinues hydroxychloroquine and lopinavir/ritonavir treatment arms for COVID-19 &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;9&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; July 2020: Independent evaluation of global COVID-19 response announced &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;15&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; July 2020: More than 150 countries engaged in COVID-19 vaccine global access facility &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;nd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; July 2020: New COVID-19 Law Lab to provide legal information and support for the global COVID-19 response &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; August 2020: Statement on the fourth meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV) &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; August 2020: 2 in 5 schools around the world lacked basic handwashing facilities prior to COVID-19 pandemic &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;24&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; August 2020: 173 countries and multiple candidate vaccines engaged in COVID-19 vaccine Global Access Facility &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; September 2020: Increasing understanding of the impact of COVID-19 for pregnant women and their babies &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;18&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; September 2020: WHO and UNICEF recommit to accelerating health and well-being at all ages &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 23&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;rd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; September 2020: COVID-19 pandemic: countries urged to take stronger action to stop spread of harmful information &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;28&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; September 2020: Global partnership to make available 120 million affordable, quality COVID-19 rapid tests for low- and middle-income countries &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; October 2020: The best time to prevent the next pandemic is now: countries join voices for better emergency preparedness &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; October 2020: Impact of COVID-19 on people’s livelihoods, their health and our food systems &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;nd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; October 2020: WHO and Wikimedia Foundation expand access to trusted information about COVID-19 on Wikipedia &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; October 2020: Statement on the fifth meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV)  &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; November 2020: WHO-ICMRA joint statement on the need for improved global regulatory alignment on COVID-19 medicines and vaccines &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; November 2020: Over US$2 billion raised to support equitable access to COVID-19 vaccines with additional US$5 billion needed in 2021 &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;26&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; November 2020: Existing HIV and TB laboratory systems facilitating COVID-19 testing in Africa &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; December 2020: New checklist supports schools to reopen and prepare for COVID-19 resurgences &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;14&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; December 2020: Almost 2 billion people depend on healthcare facilities without basic water services – WHO, UNICEF &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;18&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; December 2020: COVAX Announces additional deals to access promising COVID-19 vaccine candidates; plans global rollout starting Q1 2021 &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;31&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; December 2020: WHO issues its first emergency use validation for a COVID-19 vaccine and emphasizes need for equitable global access &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; January 2021: Global scientists double down on SARS-CoV-2 variants research at WHO-hosted forum &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;15&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; January 2021: Emergency Committee on COVID-19 advises on variants, vaccines &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 15&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; January 2021: Statement on the sixth meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV) &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;nd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; January 2021: COVAX Announces new agreement, plans for first deliveries &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;rd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; February 2021: COVAX publishes first interim distribution forecast &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;8&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; February 2021: COVAX Statement on New Variants of SARS-CoV-2 &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;15&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; February 2021: WHO lists two additional COVID-19 vaccines for emergency use and COVAX roll-out &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;16&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; February 2021: COVAX Statement on WHO Emergency Use Listing for AstraZeneca/ Oxford COVID-19 vaccine &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2021: First COVID-19 COVAX vaccine doses administered in Africa &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;16&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2021: New research highlights risks of separating newborns from mothers during COVID-19 pandemic &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;17&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2021: WHO Statement on AstraZeneca COVID-19 vaccine safety signals &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;19&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2021: Statement of the WHO Global Advisory Committee on Vaccine Safety (GACVS) COVID-19 subcommittee on safety signals related to the AstraZeneca COVID-19 vaccine &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;25&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2021: COVAX updates participants on delivery delays for vaccines from Serum Institute of India (SII) and AstraZeneca &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; March 2021: WHO calls for further studies, data on origin of SARS-CoV-2 virus, reiterates that all hypotheses remain open &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2021: WHO urges countries to build a fairer, healthier world post-COVID-19 &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;8&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2021: COVAX reaches over 100 economies, 42 days after first international delivery &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;19&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2021: Statement on the seventh meeting of the International Health Regulations (2005) Emergency Committee regarding the outbreak of novel coronavirus (2019-nCoV) &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;23&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;rd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2021: COVID-19 continues to disrupt essential health services in 90% of countries &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; April 2021: WHO lists Moderna vaccine for emergency use &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;rd&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; May 2021: WHO welcomes Sweden’s announcement to share COVID-29 vaccine doses with COVAX &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; May 2021: WHO lists additional COVID-19 vaccine for emergency use and issues interim policy recommendations &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;19&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; May 2021: World Health Assembly to focus on ending COVID-19 pandemic and preparing for next one &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;31&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; May 2021: WHO announces simple, easy-to-say labels for SARS-CoV-2 Variants of Interest and Concern &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; June 2021: WHO and Canada: Working together to end the acute phase of the COVID-19 and equipping countries to emerge from the pandemic with stronger and more equitable health systems &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#fffe81; background-color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; June 2021: WHO validates Sinovac COVID-19 vaccine for emergency use and issues interim policy recommendations &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;11&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; June 2021: Statement for healthcare professionals: How COVID-19 vaccines are regulated for safety and effectiveness &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;24&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; June 2021: Directors General of WHO, WIPO and the WTO agree on intensified cooperation in support of access to medical technologies worldwide to tackle the COVID-19 pandemic &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; June 2021: First Meeting of the Task Force on COVID-19 vaccines, therapeutics and diagnostics for developing countries &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; 1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;st&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; July 2021: Joint COVAX Statement on the Equal Recognition of Vaccines &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:#ffffff;&quot;&gt;    &lt;/span&gt;&lt;/p&gt;
+&lt;ul type=&quot;circle&quot; style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 0;&quot;&gt;&lt;li style=&quot; font-family:'Segoe UI','Segoe UI Web','Arial','Verdana','sans-serif'; font-size:12pt; color:#fffe81; background-color:transparent;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:48px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px; vertical-align:super;&quot;&gt;th&lt;/span&gt;&lt;span style=&quot; font-family:'Arial Rounded MT Bold','Arial Rounded MT Bold_EmbeddedFont','Arial Rounded MT Bold_MSFontService','sans-serif'; font-size:12px;&quot;&gt; July 2021: WHO global conference on communicating science during health emergencies sparks enormous public interest &lt;/span&gt;&lt;span style=&quot; font-size:12px;&quot;&gt;    &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resources.qrc">:/resources/icons/who1.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resources.qrc">:/resources/icons/who2.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resources.qrc">:/resources/icons/who3.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_5">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resources.qrc">:/resources/icons/who4.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_6">
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../resources.qrc">:/resources/icons/who5.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <property name="leftMargin">
+         <number>7</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>4</number>
+        </property>
+        <item row="0" column="6">
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgb(28, 113, 216);
+color: rgb(255, 254, 129);
+</string>
+          </property>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="pushButton">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgb(28, 113, 216);
+color: rgb(255, 254, 129);
+</string>
+          </property>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgb(28, 113, 216);
+color: rgb(255, 254, 129);</string>
+          </property>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgb(28, 113, 216);
+color: rgb(255, 254, 129);</string>
+          </property>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgb(28, 113, 216);
+color: rgb(255, 254, 129);</string>
+          </property>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="maximumSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background: rgb(28, 113, 216);
+color: rgb(255, 254, 129);</string>
+          </property>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

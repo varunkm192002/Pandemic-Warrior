@@ -1,0 +1,36 @@
+<RCC>
+  <qresource prefix="resources">
+    <file>icons/bp.png</file>
+    <file>icons/Covid.png</file>
+    <file>icons/Covid-1.png</file>
+    <file>icons/w1.png</file>
+    <file>icons/w2.png</file>
+    <file>icons/w3.png</file>
+    <file>icons/w4.png</file>
+    <file>icons/w5.png</file>
+    <file>icons/w6.jpg</file>
+    <file>icons/w7.jpg</file>
+    <file>icons/w8.jpg</file>
+    <file>icons/w9.jpg</file>
+    <file>icons/w10.jpg</file>
+    <file>icons/w11.jpg</file>
+    <file>icons/w12.jpg</file>
+    <file>icons/w13.jpg</file>
+    <file>icons/w14.jpg</file>
+    <file>icons/w15.jpg</file>
+    <file>icons/w16.jpg</file>
+    <file>icons/w17.jpg</file>
+    <file>icons/w18.jpg</file>
+    <file>icons/w19.jpeg</file>
+    <file>icons/w23.png</file>
+    <file>icons/w24.png</file>
+    <file>icons/w25.jpg</file>
+    <file>icons/w26.png</file>
+    <file>icons/who1.jpg</file>
+    <file>icons/who2.jpg</file>
+    <file>icons/who3.jpg</file>
+    <file>icons/who4.jpg</file>
+    <file>icons/who5.jpg</file>
+    <file>icons/Covid-anim.gif</file>
+  </qresource>
+</RCC>

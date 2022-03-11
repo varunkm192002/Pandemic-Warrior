@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>URW Bookman [UKWN]</family>
+    <italic>true</italic>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget { border: 0; 
+
+background-color: rgb(49, 122, 210);}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="font">
+      <font>
+       <family>Nimbus Sans Narrow [urw]</family>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+background-color: rgb(2, 119, 189);
+border:2px;
+border-radius:30px;}
+
+QFrame::pane{
+border:0;}
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;  
+	background-color: rgb(209, 209, 209);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(119, 118, 123);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	 
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::handle:vertical:pressed {	
+	 
+	background-color:rgb(255, 255, 127);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(119, 118, 123);	
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color:rgb(255, 255, 127);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color:rgb(255, 255, 127);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(119, 118, 123);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color:rgb(255, 255, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal {
+	border: none; 
+	background-color: rgb(209, 209, 209);
+    height: 14px;
+    margin: 0px 15px 0px 15px;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR HORIZONTAL */
+QScrollBar::handle:horizontal {	
+	background-color: rgb(119, 118, 123);
+	min-width: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:horizontal:hover{	
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::handle:horizontal:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:horizontal {
+	border: none;
+	background-color: rgb(119, 118, 123);	
+	width: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: left;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:hover {	
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::sub-line:horizontal:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:horizontal{
+	border: none;
+	background-color: rgb(119, 118, 123);
+	width: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:hover {	
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::add-line:horizontal:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+	background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Text">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>46</red>
+                 <green>52</green>
+                 <blue>54</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="PlaceholderText">
+               <brush brushstyle="NoBrush">
+                <color alpha="128">
+                 <red>46</red>
+                 <green>52</green>
+                 <blue>54</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Text">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>46</red>
+                 <green>52</green>
+                 <blue>54</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="PlaceholderText">
+               <brush brushstyle="NoBrush">
+                <color alpha="128">
+                 <red>46</red>
+                 <green>52</green>
+                 <blue>54</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Text">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>146</red>
+                 <green>148</green>
+                 <blue>149</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>2</red>
+                 <green>119</green>
+                 <blue>189</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="PlaceholderText">
+               <brush brushstyle="NoBrush">
+                <color alpha="128">
+                 <red>46</red>
+                 <green>52</green>
+                 <blue>54</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="font">
+            <font>
+             <family>URW Bookman [UKWN]</family>
+             <pointsize>11</pointsize>
+             <italic>true</italic>
+             <stylestrategy>PreferAntialias</stylestrategy>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> QHeaderView::section {
+                    border-top: 0px solid 4181C0;
+                    border-bottom: 1px solid 4181C0;
+                    border-right: 1px solid 4181C0;                    
+					
+					
+					background-color: rgb(53, 132, 228);
+					color: rgb(250, 255, 0);}
+
+
+QTableWidget::columns{
+	
+	
+	 				background-color: #2F2F2F;
+                    border: 1px solid #4181C0;                 
+					color: rgb(250, 255, 0);
+                    selection-background-color: #4181C0;
+                    selection-color: rgb(250, 255, 0);
+
+}
+
+QTableWidget::item{
+color:white;
+	
+	background-color: rgb(131, 54, 54);
+}
+
+
+
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>8</number>
+           </property>
+           <property name="sizeAdjustPolicy">
+            <enum>QAbstractScrollArea::AdjustToContents</enum>
+           </property>
+           <property name="dragEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>false</bool>
+           </property>
+           <property name="showGrid">
+            <bool>true</bool>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::DashLine</enum>
+           </property>
+           <property name="sortingEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="cornerButtonEnabled">
+            <bool>true</bool>
+           </property>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>24</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>119</number>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>70</number>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>Number of doses</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Approved age group</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Effectiveness against death</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Effective against current variants</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Efficacy against disease</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Emergency use authorization ( U.S.A)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Emergency use authorization (India)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Type of vaccine</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Common Side-Effects</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Testing for Children? (in U.S.A)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Price (USD)</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>Who should not get the vaccine?</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Pfizer</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Moderna</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Janssen</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>AstraZeneca</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Novavax</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Sputnik V</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Covaxin</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>2, 21 days apart</string>
+            </property>
+            <property name="foreground">
+             <brush brushstyle="NoBrush">
+              <color alpha="255">
+               <red>255</red>
+               <green>247</green>
+               <blue>14</blue>
+              </color>
+             </brush>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>2, 28 days apart</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>1</string>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>2, 4-12 weeks apart</string>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>2, 21 days apart</string>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>2, 21 days apart</string>
+            </property>
+           </item>
+           <item row="0" column="6">
+            <property name="text">
+             <string>2, 28 days apart</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>12 years+</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>18 years and older</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>18 years and older</string>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>18 years and older</string>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>18 years and older</string>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>18 years and older</string>
+            </property>
+           </item>
+           <item row="1" column="6">
+            <property name="text">
+             <string>12 years and above</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="2" column="6">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="3" column="3">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="3" column="4">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="3" column="5">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="3" column="6">
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>95% (86% in 65 years and older)</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>94.1% (86% in 65 years and older)</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>72% (86% against severe disease)</string>
+            </property>
+           </item>
+           <item row="4" column="3">
+            <property name="text">
+             <string>70% (100% for severe disease)</string>
+            </property>
+           </item>
+           <item row="4" column="4">
+            <property name="text">
+             <string>95.6% (UK trials)</string>
+            </property>
+           </item>
+           <item row="4" column="5">
+            <property name="text">
+             <string>91.4% (Original Strains)</string>
+            </property>
+           </item>
+           <item row="4" column="6">
+            <property name="text">
+             <string>78% efficacy against mild, moderate and severe disease</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>Approved</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>Approved</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>Approved</string>
+            </property>
+           </item>
+           <item row="5" column="3">
+            <property name="text">
+             <string>Not Approved in U.S.</string>
+            </property>
+           </item>
+           <item row="5" column="4">
+            <property name="text">
+             <string>Not Approved</string>
+            </property>
+           </item>
+           <item row="5" column="5">
+            <property name="text">
+             <string>Not Approved</string>
+            </property>
+           </item>
+           <item row="5" column="6">
+            <property name="text">
+             <string>Not Approved</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>Not Approved</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>Not Approved</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>Not Approved</string>
+            </property>
+           </item>
+           <item row="6" column="3">
+            <property name="text">
+             <string>Approved (as Covishield)</string>
+            </property>
+           </item>
+           <item row="6" column="4">
+            <property name="text">
+             <string>Not Approved</string>
+            </property>
+           </item>
+           <item row="6" column="5">
+            <property name="text">
+             <string>Approved</string>
+            </property>
+           </item>
+           <item row="6" column="6">
+            <property name="text">
+             <string>Approved</string>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>mRNA</string>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>mRNA</string>
+            </property>
+           </item>
+           <item row="7" column="2">
+            <property name="text">
+             <string>Vector (modified common cold virus)</string>
+            </property>
+           </item>
+           <item row="7" column="3">
+            <property name="text">
+             <string>Inactivated common cold virus</string>
+            </property>
+           </item>
+           <item row="7" column="4">
+            <property name="text">
+             <string>Recombinant protein/adjuvants</string>
+            </property>
+           </item>
+           <item row="7" column="5">
+            <property name="text">
+             <string>Adenovirus based</string>
+            </property>
+           </item>
+           <item row="7" column="6">
+            <property name="text">
+             <string>Inactivated SARS-CoV-2 virus using Whole-Virion Inactivated Vero-Cell platform technology</string>
+            </property>
+           </item>
+           <item row="8" column="0">
+            <property name="text">
+             <string>Fatigue,
+headache,
+chills,
+muscle
+pain</string>
+            </property>
+           </item>
+           <item row="8" column="1">
+            <property name="text">
+             <string>Fatigue,
+headache,
+chills,
+muscle
+pain</string>
+            </property>
+           </item>
+           <item row="8" column="2">
+            <property name="text">
+             <string>Fatigue,
+headache,
+chills,
+muscle
+pain</string>
+            </property>
+           </item>
+           <item row="8" column="3">
+            <property name="text">
+             <string>Fatigue,
+headache,
+chills, muscle
+pain</string>
+            </property>
+           </item>
+           <item row="8" column="4">
+            <property name="text">
+             <string>Fatigue,
+headache,
+chills,
+muscle pain</string>
+            </property>
+           </item>
+           <item row="8" column="5">
+            <property name="text">
+             <string>Injection site
+pain, headache,
+fatigue, Flu-like
+illness</string>
+            </property>
+           </item>
+           <item row="8" column="6">
+            <property name="text">
+             <string>Injection site pain,
+headache, fatigue,
+fever, body ache,
+abdominal pain,
+nausea and
+vomiting,
+dizziness-
+giddiness, tremor,
+sweating, cold,
+cough and
+injection site
+swelling.</string>
+            </property>
+           </item>
+           <item row="9" column="0">
+            <property name="text">
+             <string>Yes, ages
+12-15</string>
+            </property>
+           </item>
+           <item row="9" column="1">
+            <property name="text">
+             <string>Yes, ages
+12-17</string>
+            </property>
+           </item>
+           <item row="9" column="2">
+            <property name="text">
+             <string>TBD</string>
+            </property>
+           </item>
+           <item row="9" column="3">
+            <property name="text">
+             <string>TBD</string>
+            </property>
+           </item>
+           <item row="9" column="4">
+            <property name="text">
+             <string>TBD</string>
+            </property>
+           </item>
+           <item row="9" column="5">
+            <property name="text">
+             <string>TBD</string>
+            </property>
+           </item>
+           <item row="9" column="6">
+            <property name="text">
+             <string>Yes, ages
+12-17</string>
+            </property>
+           </item>
+           <item row="10" column="0">
+            <property name="text">
+             <string>$23/dose</string>
+            </property>
+           </item>
+           <item row="10" column="1">
+            <property name="text">
+             <string>$25-$37</string>
+            </property>
+           </item>
+           <item row="10" column="2">
+            <property name="text">
+             <string>$10</string>
+            </property>
+           </item>
+           <item row="10" column="3">
+            <property name="text">
+             <string>$3-$4</string>
+            </property>
+           </item>
+           <item row="10" column="4">
+            <property name="text">
+             <string>$16</string>
+            </property>
+           </item>
+           <item row="10" column="5">
+            <property name="text">
+             <string>$10</string>
+            </property>
+           </item>
+           <item row="10" column="6">
+            <property name="text">
+             <string>$2</string>
+            </property>
+           </item>
+           <item row="11" column="0">
+            <property name="text">
+             <string>History of
+allergic
+reaction
+to
+polyethyle
+ne glycol</string>
+            </property>
+           </item>
+           <item row="11" column="1">
+            <property name="text">
+             <string>History of
+allergic
+reaction
+to
+polyethyle
+ne glycol</string>
+            </property>
+           </item>
+           <item row="11" column="2">
+            <property name="text">
+             <string>History of
+severe
+reaction to
+vaccine
+ingredients,
+risk of rare</string>
+            </property>
+           </item>
+           <item row="11" column="3">
+            <property name="text">
+             <string>TBD</string>
+            </property>
+           </item>
+           <item row="11" column="4">
+            <property name="text">
+             <string>TBD</string>
+            </property>
+           </item>
+           <item row="11" column="5">
+            <property name="text">
+             <string>History of
+allergic
+reaction
+anaphylaxis,
+age below 18
+years.</string>
+            </property>
+           </item>
+           <item row="11" column="6">
+            <property name="text">
+             <string>Pregnant and
+breastfeeding
+women, Person
+having allergies,
+fever or bleeding
+disorder, weaker</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QFrame" name="frame_btns">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>5</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>4</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btn_minimize_3">
+              <property name="minimumSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>17</width>
+                <height>17</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Minimize</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 170, 0);
+}
+QPushButton:hover {	
+	background-color: rgba(255, 170, 0, 150);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_close_3">
+              <property name="minimumSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>17</width>
+                <height>17</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Close</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:hover {		
+	background-color: rgba(255, 0, 0, 150);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

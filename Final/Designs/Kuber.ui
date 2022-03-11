@@ -1,0 +1,2553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget { border: 0; 
+
+background-color: rgb(49, 122, 210);}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+background-color: rgb(2, 119, 189);
+border:2px;
+border-radius:30px;}
+
+QFrame::pane{
+border:0;}
+
+/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;  
+	background-color: rgb(209, 209, 209);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(119, 118, 123);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	 
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::handle:vertical:pressed {	
+	 
+	background-color:rgb(255, 255, 127);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(119, 118, 123);	
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color:rgb(255, 255, 127);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color:rgb(255, 255, 127);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(119, 118, 123);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color:rgb(255, 255, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/* HORIZONTAL SCROLLBAR */
+ QScrollBar:horizontal {
+	border: none; 
+	background-color: rgb(209, 209, 209);
+    height: 14px;
+    margin: 0px 15px 0px 15px;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR HORIZONTAL */
+QScrollBar::handle:horizontal {	
+	background-color: rgb(119, 118, 123);
+	min-width: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:horizontal:hover{	
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::handle:horizontal:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:horizontal {
+	border: none;
+	background-color: rgb(119, 118, 123);	
+	width: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: left;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:hover {	
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::sub-line:horizontal:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:horizontal{
+	border: none;
+	background-color: rgb(119, 118, 123);
+	width: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:hover {	
+	background-color: rgb(255, 255, 127);
+}
+QScrollBar::add-line:horizontal:pressed {	
+	background-color: rgb(255, 255, 127);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+	background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>11</number>
+         </property>
+         <property name="bottomMargin">
+          <number>7</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>7</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>6</number>
+         </property>
+         <item row="1" column="0">
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="cursor" stdset="0">
+            <cursorShape>ArrowCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> QHeaderView::section {
+                    border-top: 0px solid 4181C0;
+                    border-bottom: 1px solid 4181C0;
+                    border-right: 1px solid 4181C0;                    
+					
+					
+					background-color: rgb(53, 132, 228);
+					color: rgb(250, 255, 0);}
+
+
+QTableWidget::columns{
+	
+	
+	 				background-color: #2F2F2F;
+                    border: 1px solid #4181C0;                 
+					color: rgb(250, 255, 0);
+                    selection-background-color: #4181C0;
+                    selection-color: rgb(250, 255, 0);
+
+}
+
+QTableWidget::item{
+color:white;
+	
+	background-color: rgb(131, 54, 54);
+}
+
+
+
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="sizeAdjustPolicy">
+            <enum>QAbstractScrollArea::AdjustToContents</enum>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::DashLine</enum>
+           </property>
+           <property name="rowCount">
+            <number>102</number>
+           </property>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>55</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>277</number>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderMinimumSectionSize">
+            <number>35</number>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>35</number>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>6</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>7</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>9</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>10</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>11</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>12</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>13</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>14</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>15</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>16</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>17</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>18</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>19</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>20</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>21</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>22</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>23</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>24</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>25</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>26</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>27</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>28</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>29</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>30</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>31</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>32</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>33</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>34</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>35</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>36</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>37</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>38</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>39</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>40</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>41</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>42</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>43</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>44</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>45</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>46</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>47</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>48</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>49</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>50</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>51</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>52</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>53</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>54</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>55</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>56</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>57</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>58</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>59</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>60</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>61</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>62</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>63</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>64</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>65</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>66</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>67</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>68</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>69</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>70</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>71</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>72</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>73</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>74</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>75</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>76</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>77</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>78</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>79</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>80</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>81</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>82</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>83</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>84</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>85</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>86</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>87</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>88</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>89</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>90</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>91</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>92</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>93</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>94</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>95</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>96</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>97</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>98</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>99</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>100</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>101</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>102</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>Government Hospitals</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="background">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Address</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="background">
+             <color>
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+             </color>
+            </property>
+            <property name="foreground">
+             <brush brushstyle="NoBrush">
+              <color alpha="255">
+               <red>249</red>
+               <green>240</green>
+               <blue>107</blue>
+              </color>
+             </brush>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Contact Number</string>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>Aambegaon Dispensary	</string>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>284 Peth ,Aambegaon</string>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>9021378923</string>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>Abhijit Kadam Krida Sankul	</string>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>Shivdarshan Pune</string>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>9545102067</string>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>Anna Saheb Magar Hospital Covishield</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>Magarpatta Rd, Nearby Schumer Vadivale, Magarpatta,
+ North Hadapsar,Pune</string>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>8806113283</string>
+            </property>
+           </item>
+           <item row="3" column="0">
+            <property name="text">
+             <string>Annabhau Sathe Virangula K.</string>
+            </property>
+           </item>
+           <item row="3" column="1">
+            <property name="text">
+             <string>Handewadi Hadapsar Pune</string>
+            </property>
+           </item>
+           <item row="3" column="2">
+            <property name="text">
+             <string>4428281917</string>
+            </property>
+           </item>
+           <item row="4" column="0">
+            <property name="text">
+             <string>AnnaSaheb M Savali Foundation</string>
+            </property>
+           </item>
+           <item row="4" column="1">
+            <property name="text">
+             <string>Sasane Nagar Kalepadal Hadpsar</string>
+            </property>
+           </item>
+           <item row="4" column="2">
+            <property name="text">
+             <string>1127189711</string>
+            </property>
+           </item>
+           <item row="5" column="0">
+            <property name="text">
+             <string>Annasaheb Magar Vistarit Kaksha	</string>
+            </property>
+           </item>
+           <item row="5" column="1">
+            <property name="text">
+             <string>MAGARPATTA ELECTION BOOTH</string>
+            </property>
+           </item>
+           <item row="5" column="2">
+            <property name="text">
+             <string>1125740547</string>
+            </property>
+           </item>
+           <item row="6" column="0">
+            <property name="text">
+             <string>Aundh Kuti Rugnalaya</string>
+            </property>
+           </item>
+           <item row="6" column="1">
+            <property name="text">
+             <string>Brahman Chowk Near AIMS
+ Hospital Aundh Pune</string>
+            </property>
+           </item>
+           <item row="6" column="2">
+            <property name="text">
+             <string>2224982312</string>
+            </property>
+           </item>
+           <item row="7" column="0">
+            <property name="text">
+             <string>B.T.Kawade Dispensary</string>
+            </property>
+           </item>
+           <item row="7" column="1">
+            <property name="text">
+             <string>KOREGAON PARK ,PUNE</string>
+            </property>
+           </item>
+           <item row="7" column="2">
+            <property name="text">
+             <string>2227686094</string>
+            </property>
+           </item>
+           <item row="8" column="0">
+            <property name="text">
+             <string>Baba Saheb Ambedkar Dias Plot Hospital</string>
+            </property>
+           </item>
+           <item row="8" column="1">
+            <property name="text">
+             <string>Dias Plot, Opp Ambedkar Hospital, Gultekdi, Pune</string>
+            </property>
+           </item>
+           <item row="8" column="2">
+            <property name="text">
+             <string>2227420094</string>
+            </property>
+           </item>
+           <item row="9" column="0">
+            <property name="text">
+             <string>BABASAHEB AMBEDKAR KRIDASANKUL</string>
+            </property>
+           </item>
+           <item row="9" column="1">
+            <property name="text">
+             <string>SAMATA SOCIETY PADMAWATI</string>
+            </property>
+           </item>
+           <item row="9" column="2">
+            <property name="text">
+             <string>2224863086</string>
+            </property>
+           </item>
+           <item row="10" column="0">
+            <property name="text">
+             <string>Bahu Uddeshiya Hall Dhanori	</string>
+            </property>
+           </item>
+           <item row="10" column="1">
+            <property name="text">
+             <string>Anand Park Ambnagri Society Dhanori Road Pune</string>
+            </property>
+           </item>
+           <item row="10" column="2">
+            <property name="text">
+             <string>2525578456</string>
+            </property>
+           </item>
+           <item row="11" column="0">
+            <property name="text">
+             <string>Bahu Uddeshiya Vitthalwadi</string>
+            </property>
+           </item>
+           <item row="11" column="1">
+            <property name="text">
+             <string>S. No. 24 6, Vishranti Nagar, Vitthalwadi, Sinhgad Road,</string>
+            </property>
+           </item>
+           <item row="11" column="2">
+            <property name="text">
+             <string>2226616771</string>
+            </property>
+           </item>
+           <item row="12" column="0">
+            <property name="text">
+             <string>Balajinagar Dhankavde Hospital Covishield</string>
+            </property>
+           </item>
+           <item row="12" column="1">
+            <property name="text">
+             <string>Balajinagar Pune</string>
+            </property>
+           </item>
+           <item row="12" column="2">
+            <property name="text">
+             <string>222624781</string>
+            </property>
+           </item>
+           <item row="13" column="0">
+            <property name="text">
+             <string>Baner Arogya Kendra</string>
+            </property>
+           </item>
+           <item row="13" column="1">
+            <property name="text">
+             <string>SR.NO.164 NEAR PRIME SOC BANER ROAD</string>
+            </property>
+           </item>
+           <item row="13" column="2">
+            <property name="text">
+             <string>2227686094</string>
+            </property>
+           </item>
+           <item row="14" column="0">
+            <property name="text">
+             <string>Bantar School Gadital</string>
+            </property>
+           </item>
+           <item row="14" column="1">
+            <property name="text">
+             <string>GADITAL HADAPSAR</string>
+            </property>
+           </item>
+           <item row="14" column="2">
+            <property name="text">
+             <string>4428525012</string>
+            </property>
+           </item>
+           <item row="15" column="0">
+            <property name="text">
+             <string>BARMA CELL KIND YEDWARDPAUL</string>
+            </property>
+           </item>
+           <item row="15" column="1">
+            <property name="text">
+             <string>INDIRA NAGAR</string>
+            </property>
+           </item>
+           <item row="15" column="2">
+            <property name="text">
+             <string>2222007208</string>
+            </property>
+           </item>
+           <item row="16" column="0">
+            <property name="text">
+             <string>Bartakke Hospital</string>
+            </property>
+           </item>
+           <item row="16" column="1">
+            <property name="text">
+             <string>Rahul Park Atul Nagar
+ Warje Pune</string>
+            </property>
+           </item>
+           <item row="16" column="2">
+            <property name="text">
+             <string>80795 08411</string>
+            </property>
+           </item>
+           <item row="17" column="0">
+            <property name="text">
+             <string>Bhangire Hospital Mohammadwadi</string>
+            </property>
+           </item>
+           <item row="17" column="1">
+            <property name="text">
+             <string>Nyati Estate, Mohammadwadi, Mahadev Wadi,
+ Mohammed Wadi, Pune</string>
+            </property>
+           </item>
+           <item row="17" column="2">
+            <property name="text">
+             <string>81675 53901</string>
+            </property>
+           </item>
+           <item row="18" column="0">
+            <property name="text">
+             <string>Bindu Madhav Thakre Hospital</string>
+            </property>
+           </item>
+           <item row="18" column="1">
+            <property name="text">
+             <string>Gosavibasti, Pune</string>
+            </property>
+           </item>
+           <item row="18" column="2">
+            <property name="text">
+             <string>61219 70074</string>
+            </property>
+           </item>
+           <item row="19" column="0">
+            <property name="text">
+             <string>BJ Medical Collage</string>
+            </property>
+           </item>
+           <item row="19" column="1">
+            <property name="text">
+             <string>Station road,Agarkar Nagar
+ Pune</string>
+            </property>
+           </item>
+           <item row="19" column="2">
+            <property name="text">
+             <string>75971 52364</string>
+            </property>
+           </item>
+           <item row="20" column="0">
+            <property name="text">
+             <string>Chattrapati Shivray Hospital</string>
+            </property>
+           </item>
+           <item row="20" column="1">
+            <property name="text">
+             <string>Nagpur Chawl Yerwada</string>
+            </property>
+           </item>
+           <item row="20" column="2">
+            <property name="text">
+             <string>61279 01206</string>
+            </property>
+           </item>
+           <item row="21" column="0">
+            <property name="text">
+             <string>Chattrapti Shahu Maharaj Hospital</string>
+            </property>
+           </item>
+           <item row="21" column="1">
+            <property name="text">
+             <string>Salunke Vihar Road, Kedari Nagar, Pune</string>
+            </property>
+           </item>
+           <item row="21" column="2">
+            <property name="text">
+             <string>88476 39731</string>
+            </property>
+           </item>
+           <item row="22" column="0">
+            <property name="text">
+             <string>Dadasaheb Gaikwad Hospital</string>
+            </property>
+           </item>
+           <item row="22" column="1">
+            <property name="text">
+             <string>Near HDFC Bank Barne Road Mangalwar Peth</string>
+            </property>
+           </item>
+           <item row="22" column="2">
+            <property name="text">
+             <string>61279 22992</string>
+            </property>
+           </item>
+           <item row="23" column="0">
+            <property name="text">
+             <string>Dalvi Hospital</string>
+            </property>
+           </item>
+           <item row="23" column="1">
+            <property name="text">
+             <string>Babulal Sheikth Path, Narveer Tanaji Wadi,
+ Shivajinagar, Pune,</string>
+            </property>
+           </item>
+           <item row="23" column="2">
+            <property name="text">
+             <string> 97586 26622</string>
+            </property>
+           </item>
+           <item row="24" column="0">
+            <property name="text">
+             <string>Dhayri Grampanchayat Prathmik Kendra</string>
+            </property>
+           </item>
+           <item row="24" column="1">
+            <property name="text">
+             <string>Shinhagad Road</string>
+            </property>
+           </item>
+           <item row="24" column="2">
+            <property name="text">
+             <string>61279 51828</string>
+            </property>
+           </item>
+           <item row="25" column="0">
+            <property name="text">
+             <string>Dhole Mala Manapa Shala</string>
+            </property>
+           </item>
+           <item row="25" column="1">
+            <property name="text">
+             <string>Near Dr Babasaheb Ambedkar Hospital Dias Plot Bibwewadi</string>
+            </property>
+           </item>
+           <item row="25" column="2">
+            <property name="text">
+             <string>82076 32429</string>
+            </property>
+           </item>
+           <item row="26" column="0">
+            <property name="text">
+             <string>Fursungi Dispensary</string>
+            </property>
+           </item>
+           <item row="26" column="1">
+            <property name="text">
+             <string>Near Bustand Phursungi ,Pune</string>
+            </property>
+           </item>
+           <item row="26" column="2">
+            <property name="text">
+             <string>81675 38024</string>
+            </property>
+           </item>
+           <item row="27" column="0">
+            <property name="text">
+             <string>Gadgil Hospital Dattawadi</string>
+            </property>
+           </item>
+           <item row="27" column="1">
+            <property name="text">
+             <string>Dattawadi Pune</string>
+            </property>
+           </item>
+           <item row="27" column="2">
+            <property name="text">
+             <string>61279 10541</string>
+            </property>
+           </item>
+           <item row="28" column="0">
+            <property name="text">
+             <string>Galande Hospital Nagar Road</string>
+            </property>
+           </item>
+           <item row="28" column="1">
+            <property name="text">
+             <string>Kalyani Nagar Shastri Chouk ,Pune</string>
+            </property>
+           </item>
+           <item row="28" column="2">
+            <property name="text">
+             <string>79790 03628</string>
+            </property>
+           </item>
+           <item row="29" column="0">
+            <property name="text">
+             <string>Gandhi Bhavan Kothrud</string>
+            </property>
+           </item>
+           <item row="29" column="1">
+            <property name="text">
+             <string>Survey No 36 Gandhi Bhavan DP Road Kothrud Pune</string>
+            </property>
+           </item>
+           <item row="29" column="2">
+            <property name="text">
+             <string>98336 24053</string>
+            </property>
+           </item>
+           <item row="30" column="0">
+            <property name="text">
+             <string>Gangaram Karne Hospital</string>
+            </property>
+           </item>
+           <item row="30" column="1">
+            <property name="text">
+             <string>Shastri Nagar Nagar Road
+ Pune</string>
+            </property>
+           </item>
+           <item row="30" column="2">
+            <property name="text">
+             <string>88470 37448</string>
+            </property>
+           </item>
+           <item row="31" column="0">
+            <property name="text">
+             <string>GANGUBAI DHUMAL WI. KENDRA</string>
+            </property>
+           </item>
+           <item row="31" column="1">
+            <property name="text">
+             <string>ATULNAGAR WARJE PUNE</string>
+            </property>
+           </item>
+           <item row="31" column="2">
+            <property name="text">
+             <string>63111 83041</string>
+            </property>
+           </item>
+           <item row="32" column="0">
+            <property name="text">
+             <string>GHANDHINAGAR VIRANGULA KENDRA</string>
+            </property>
+           </item>
+           <item row="32" column="1">
+            <property name="text">
+             <string>28 B BAPU JAGJEEVAN RAM SCHOOL YERWADA</string>
+            </property>
+           </item>
+           <item row="32" column="2">
+            <property name="text">
+             <string>788 757 2610</string>
+            </property>
+           </item>
+           <item row="33" column="0">
+            <property name="text">
+             <string>Health Center Pune University</string>
+            </property>
+           </item>
+           <item row="33" column="1">
+            <property name="text">
+             <string>Health Center Savitribai Phule Pune University ,Ganesh Khind Road Pune</string>
+            </property>
+           </item>
+           <item row="33" column="2">
+            <property name="text">
+             <string>61279 65120</string>
+            </property>
+           </item>
+           <item row="34" column="0">
+            <property name="text">
+             <string>Hutatma Babu Genu Hospital</string>
+            </property>
+           </item>
+           <item row="34" column="1">
+            <property name="text">
+             <string>Ravivar Peth, Near Sonya Maruti Chawk. Opposite
+ Tamboli Masjid. 411002</string>
+            </property>
+           </item>
+           <item row="34" column="2">
+            <property name="text">
+             <string> 71203 67953</string>
+            </property>
+           </item>
+           <item row="35" column="0">
+            <property name="text">
+             <string>Indira Gandhi Modern School</string>
+            </property>
+           </item>
+           <item row="35" column="1">
+            <property name="text">
+             <string>Aundh Pune</string>
+            </property>
+           </item>
+           <item row="35" column="2">
+            <property name="text">
+             <string>61279 26918</string>
+            </property>
+           </item>
+           <item row="36" column="0">
+            <property name="text">
+             <string>Indumati Manilal Khanna</string>
+            </property>
+           </item>
+           <item row="36" column="1">
+            <property name="text">
+             <string>Maharshinagar, Pune</string>
+            </property>
+           </item>
+           <item row="36" column="2">
+            <property name="text">
+             <string>61279 78398</string>
+            </property>
+           </item>
+           <item row="37" column="0">
+            <property name="text">
+             <string>Janta Vasahat Hospital</string>
+            </property>
+           </item>
+           <item row="37" column="1">
+            <property name="text">
+             <string>Parvati Paitha, Parvati, Pune</string>
+            </property>
+           </item>
+           <item row="37" column="2">
+            <property name="text">
+             <string>73601 31236</string>
+            </property>
+           </item>
+           <item row="38" column="0">
+            <property name="text">
+             <string>Jayabai Sutar Hospital</string>
+            </property>
+           </item>
+           <item row="38" column="1">
+            <property name="text">
+             <string>Shastri Nagar Rd, Azad Nagar, Kothrud, Pune</string>
+            </property>
+           </item>
+           <item row="38" column="2">
+            <property name="text">
+             <string>82070 67013</string>
+            </property>
+           </item>
+           <item row="39" column="0">
+            <property name="text">
+             <string>Kalas Hospital</string>
+            </property>
+           </item>
+           <item row="39" column="1">
+            <property name="text">
+             <string>Kalas Pune</string>
+            </property>
+           </item>
+           <item row="39" column="2">
+            <property name="text">
+             <string>73114 84000</string>
+            </property>
+           </item>
+           <item row="40" column="0">
+            <property name="text">
+             <string>Kalawati Mavale Hospital</string>
+            </property>
+           </item>
+           <item row="40" column="1">
+            <property name="text">
+             <string>VG Kothari Path, Narayan Peth, Pune</string>
+            </property>
+           </item>
+           <item row="40" column="2">
+            <property name="text">
+             <string>88475 89486</string>
+            </property>
+           </item>
+           <item row="41" column="0">
+            <property name="text">
+             <string>kamala Nehru Hospital</string>
+            </property>
+           </item>
+           <item row="41" column="1">
+            <property name="text">
+             <string>Mangalwar Peth, Near Kasba Post Office, Pune</string>
+            </property>
+           </item>
+           <item row="41" column="2">
+            <property name="text">
+             <string>88478 31742</string>
+            </property>
+           </item>
+           <item row="42" column="0">
+            <property name="text">
+             <string>Kawade Patil Bapusaheb Hosp</string>
+            </property>
+           </item>
+           <item row="42" column="1">
+            <property name="text">
+             <string>Koregaon Park</string>
+            </property>
+           </item>
+           <item row="42" column="2">
+            <property name="text">
+             <string> 61279 68906</string>
+            </property>
+           </item>
+           <item row="43" column="0">
+            <property name="text">
+             <string>KGN Mithanagar UHC</string>
+            </property>
+           </item>
+           <item row="43" column="1">
+            <property name="text">
+             <string>Near Sheetal Petroleum,
+ Meeta Nagar, Kondhwa, Pune</string>
+            </property>
+           </item>
+           <item row="43" column="2">
+            <property name="text">
+             <string>74705 56011</string>
+            </property>
+           </item>
+           <item row="44" column="0">
+            <property name="text">
+             <string>Kharadi Hospital PMC</string>
+            </property>
+           </item>
+           <item row="44" column="1">
+            <property name="text">
+             <string>Nagar Hadapsar Bypass</string>
+            </property>
+           </item>
+           <item row="44" column="2">
+            <property name="text">
+             <string>73268 34992</string>
+            </property>
+           </item>
+           <item row="45" column="0">
+            <property name="text">
+             <string>Kondhwa Savitribai Phule Hospital</string>
+            </property>
+           </item>
+           <item row="45" column="1">
+            <property name="text">
+             <string>PR KR 41 KONDHWA BUDRUK
+ NEAR MECB OFFICE ,NEAR
+ SOMAJI BUS STOP</string>
+            </property>
+           </item>
+           <item row="45" column="2">
+            <property name="text">
+             <string>80797 57389</string>
+            </property>
+           </item>
+           <item row="46" column="0">
+            <property name="text">
+             <string>Kudale Patil Amenities M Bagh</string>
+            </property>
+           </item>
+           <item row="46" column="1">
+            <property name="text">
+             <string>Near Wadekar Nursing Home Manikbagh Sinhgad Road Pune</string>
+            </property>
+           </item>
+           <item row="46" column="2">
+            <property name="text">
+             <string>72387 76600</string>
+            </property>
+           </item>
+           <item row="47" column="0">
+            <property name="text">
+             <string>Lal Bahadur Shashtri School</string>
+            </property>
+           </item>
+           <item row="47" column="1">
+            <property name="text">
+             <string>Congress House Rd, Gaothan, Shivajinagar, Pune</string>
+            </property>
+           </item>
+           <item row="47" column="2">
+            <property name="text">
+             <string> 80794 70997</string>
+            </property>
+           </item>
+           <item row="48" column="0">
+            <property name="text">
+             <string>Lohegaon Prathmik Arogya Kendra</string>
+            </property>
+           </item>
+           <item row="48" column="1">
+            <property name="text">
+             <string>489,sardar Murlidhar Road,Rasta Peth,Pune</string>
+            </property>
+           </item>
+           <item row="48" column="2">
+            <property name="text">
+             <string>87077 93776</string>
+            </property>
+           </item>
+           <item row="49" column="0">
+            <property name="text">
+             <string>Lt. Chintamanrao D Urdu School</string>
+            </property>
+           </item>
+           <item row="49" column="1">
+            <property name="text">
+             <string>Opp Vimal Vihar Society Near Bibawewadi Police
+ Station Indira Nagar Bibawewadi</string>
+            </property>
+           </item>
+           <item row="49" column="2">
+            <property name="text">
+             <string> 63488 46307</string>
+            </property>
+           </item>
+           <item row="50" column="0">
+            <property name="text">
+             <string>Malti Kachi Hospital</string>
+            </property>
+           </item>
+           <item row="50" column="1">
+            <property name="text">
+             <string>shukrwar Peth ,Pune</string>
+            </property>
+           </item>
+           <item row="50" column="2">
+            <property name="text">
+             <string>788 768 7521</string>
+            </property>
+           </item>
+           <item row="51" column="0">
+            <property name="text">
+             <string>Mamasaheb badade Dispensary</string>
+            </property>
+           </item>
+           <item row="51" column="1">
+            <property name="text">
+             <string>526, Laxmi Rd, New Nana Peth, Rasta Peth, Pune</string>
+            </property>
+           </item>
+           <item row="51" column="2">
+            <property name="text">
+             <string> 62103 96304</string>
+            </property>
+           </item>
+           <item row="52" column="0">
+            <property name="text">
+             <string>Minatai Thakre Hospital</string>
+            </property>
+           </item>
+           <item row="52" column="1">
+            <property name="text">
+             <string>Near Bhairavnath Temple,
+ Kondhwa Gavthan ,Pune</string>
+            </property>
+           </item>
+           <item row="52" column="2">
+            <property name="text">
+             <string>61279 84199</string>
+            </property>
+           </item>
+           <item row="53" column="0">
+            <property name="text">
+             <string>Murlidhar Laigude Hospital	</string>
+            </property>
+           </item>
+           <item row="53" column="1">
+            <property name="text">
+             <string>Rajyog Society,Pandurang Industrial
+ Area Dhayri, Pune</string>
+            </property>
+           </item>
+           <item row="53" column="2">
+            <property name="text">
+             <string> 61279 63939</string>
+            </property>
+           </item>
+           <item row="54" column="0">
+            <property name="text">
+             <string>Naidu Hospital Covishield</string>
+            </property>
+           </item>
+           <item row="54" column="1">
+            <property name="text">
+             <string>Behind Pune Main Railway
+ Station Off Wellesley Rd</string>
+            </property>
+           </item>
+           <item row="54" column="2">
+            <property name="text">
+             <string> 79313 13236</string>
+            </property>
+           </item>
+           <item row="55" column="0">
+            <property name="text">
+             <string>Namdeorao Shivarkar Hospital</string>
+            </property>
+           </item>
+           <item row="55" column="1">
+            <property name="text">
+             <string>Shivarkar Road, Wanowrie, Pune</string>
+            </property>
+           </item>
+           <item row="55" column="2">
+            <property name="text">
+             <string>61279 47636</string>
+            </property>
+           </item>
+           <item row="56" column="0">
+            <property name="text">
+             <string>Nimhan Hospital Pashan	</string>
+            </property>
+           </item>
+           <item row="56" column="1">
+            <property name="text">
+             <string>Near Bhaji Mandai Pashan Pune</string>
+            </property>
+           </item>
+           <item row="56" column="2">
+            <property name="text">
+             <string>81677 85263</string>
+            </property>
+           </item>
+           <item row="57" column="0">
+            <property name="text">
+             <string>PANDIT DINDAYAL SCHOOL</string>
+            </property>
+           </item>
+           <item row="57" column="1">
+            <property name="text">
+             <string>PADALE PALACE ERANDWANA OPP SHARDA CENTER</string>
+            </property>
+           </item>
+           <item row="57" column="2">
+            <property name="text">
+             <string>65718 04760</string>
+            </property>
+           </item>
+           <item row="58" column="0">
+            <property name="text">
+             <string>Pestonji Dispensary PMC</string>
+            </property>
+           </item>
+           <item row="58" column="1">
+            <property name="text">
+             <string>Near Bharat Cinema Bhawani Peth Pune	</string>
+            </property>
+           </item>
+           <item row="58" column="2">
+            <property name="text">
+             <string>65112 26701</string>
+            </property>
+           </item>
+           <item row="59" column="0">
+            <property name="text">
+             <string>PMC School Karvenagar</string>
+            </property>
+           </item>
+           <item row="59" column="1">
+            <property name="text">
+             <string>HINGANE STREE SHIKSHAN SANSTHA KARVENAGAR</string>
+            </property>
+           </item>
+           <item row="59" column="2">
+            <property name="text">
+             <string>79313 22550</string>
+            </property>
+           </item>
+           <item row="60" column="0">
+            <property name="text">
+             <string>Premchand Oswal Hospital</string>
+            </property>
+           </item>
+           <item row="60" column="1">
+            <property name="text">
+             <string>276 UPPER OTA
+ BIBWEWADI Pune</string>
+            </property>
+           </item>
+           <item row="60" column="2">
+            <property name="text">
+             <string> 88447 76750</string>
+            </property>
+           </item>
+           <item row="61" column="0">
+            <property name="text">
+             <string>Pruthak Barate Hosp</string>
+            </property>
+           </item>
+           <item row="61" column="1">
+            <property name="text">
+             <string>Ramnagar Warje Mlawadi Pune</string>
+            </property>
+           </item>
+           <item row="61" column="2">
+            <property name="text">
+             <string>71979 37636</string>
+            </property>
+           </item>
+           <item row="62" column="0">
+            <property name="text">
+             <string>Railway Hospital Pune Station</string>
+            </property>
+           </item>
+           <item row="62" column="1">
+            <property name="text">
+             <string>MALDHAKKA CHOWK PUNE
+ STATION PUNE</string>
+            </property>
+           </item>
+           <item row="62" column="2">
+            <property name="text">
+             <string>65196 21491</string>
+            </property>
+           </item>
+           <item row="63" column="0">
+            <property name="text">
+             <string>Rajashri Shahu Maharj Bhimnagar</string>
+            </property>
+           </item>
+           <item row="63" column="1">
+            <property name="text">
+             <string>Near Siporex Company, Bhim Nagar Colony,
+ Dalvi Nagar, Hadapsar, Pune</string>
+            </property>
+           </item>
+           <item row="63" column="2">
+            <property name="text">
+             <string>788 737 1712</string>
+            </property>
+           </item>
+           <item row="64" column="0">
+            <property name="text">
+             <string>Rajiv Gandhi E-learning School	</string>
+            </property>
+           </item>
+           <item row="64" column="1">
+            <property name="text">
+             <string>SHIVDARSHAN PUNE</string>
+            </property>
+           </item>
+           <item row="64" column="2">
+            <property name="text">
+             <string>66387 85100</string>
+            </property>
+           </item>
+           <item row="65" column="0">
+            <property name="text">
+             <string>Rajmata Jijau Prasutighruh</string>
+            </property>
+           </item>
+           <item row="65" column="1">
+            <property name="text">
+             <string>Mitramandal Chowk, Gol Dawakhana,
+ Parvati Paitha Near Swargate
+ Bus Stop Pune</string>
+            </property>
+           </item>
+           <item row="65" column="2">
+            <property name="text">
+             <string>71728 12638</string>
+            </property>
+           </item>
+           <item row="66" column="0">
+            <property name="text">
+             <string>Rakhmabai Thorve Hospital, Jambulwadi</string>
+            </property>
+           </item>
+           <item row="66" column="1">
+            <property name="text">
+             <string>Jambulwadi Pune</string>
+            </property>
+           </item>
+           <item row="66" column="2">
+            <property name="text">
+             <string> 61279 79498</string>
+            </property>
+           </item>
+           <item row="67" column="0">
+            <property name="text">
+             <string>Ramabai Ambedkar Ambilodha	</string>
+            </property>
+           </item>
+           <item row="67" column="1">
+            <property name="text">
+             <string>B Block, Municipal Colony, Pune,</string>
+            </property>
+           </item>
+           <item row="67" column="2">
+            <property name="text">
+             <string> 87701 86894</string>
+            </property>
+           </item>
+           <item row="68" column="0">
+            <property name="text">
+             <string>ROHAN KALE KALEPADAL</string>
+            </property>
+           </item>
+           <item row="68" column="1">
+            <property name="text">
+             <string>KALE PADAL HADAPSAR</string>
+            </property>
+           </item>
+           <item row="68" column="2">
+            <property name="text">
+             <string>64848 89355</string>
+            </property>
+           </item>
+           <item row="69" column="0">
+            <property name="text">
+             <string>Rohidas Kirad Hosp Ganesh Peth</string>
+            </property>
+           </item>
+           <item row="69" column="1">
+            <property name="text">
+             <string>Burud Galli Near Balaji Farsan Ganesh Peth Pune</string>
+            </property>
+           </item>
+           <item row="69" column="2">
+            <property name="text">
+             <string>80795 16849</string>
+            </property>
+           </item>
+           <item row="70" column="0">
+            <property name="text">
+             <string>Sadesatra Nali Dispensary</string>
+            </property>
+           </item>
+           <item row="70" column="1">
+            <property name="text">
+             <string>Sade Satra Nali, Hadapsar, Pune, Maharashtra 411028</string>
+            </property>
+           </item>
+           <item row="70" column="2">
+            <property name="text">
+             <string>79798 50134</string>
+            </property>
+           </item>
+           <item row="71" column="0">
+            <property name="text">
+             <string>Sadhu Vaswani Mission</string>
+            </property>
+           </item>
+           <item row="71" column="1">
+            <property name="text">
+             <string>10, Sadhu Vaswani Path Pune</string>
+            </property>
+           </item>
+           <item row="71" column="2">
+            <property name="text">
+             <string>71922 42286</string>
+            </property>
+           </item>
+           <item row="72" column="0">
+            <property name="text">
+             <string>Sainagar Hospital</string>
+            </property>
+           </item>
+           <item row="72" column="1">
+            <property name="text">
+             <string>SAINAGAR ,SUKHSAGARNAGAR,
+ MADHIBAN SOCIETY SHEJARI</string>
+            </property>
+           </item>
+           <item row="72" column="2">
+            <property name="text">
+             <string>73174 31048</string>
+            </property>
+           </item>
+           <item row="73" column="0">
+            <property name="text">
+             <string>Sakharam Kodre Hospital	</string>
+            </property>
+           </item>
+           <item row="73" column="1">
+            <property name="text">
+             <string>Mundhwa Pune</string>
+            </property>
+           </item>
+           <item row="73" column="2">
+            <property name="text">
+             <string> 80796 87423</string>
+            </property>
+           </item>
+           <item row="74" column="0">
+            <property name="text">
+             <string>SAMRAT ASHOKSCHOOL HINGANE</string>
+            </property>
+           </item>
+           <item row="74" column="1">
+            <property name="text">
+             <string>HINGANE STREE SHIKSHAN SANSTHA KARVENAGAR</string>
+            </property>
+           </item>
+           <item row="74" column="2">
+            <property name="text">
+             <string>61279 58458</string>
+            </property>
+           </item>
+           <item row="75" column="0">
+            <property name="text">
+             <string>Sant Dyandew School Maharshi N	</string>
+            </property>
+           </item>
+           <item row="75" column="1">
+            <property name="text">
+             <string>Maharshi Nagar Bibwewadii Pune</string>
+            </property>
+           </item>
+           <item row="75" column="2">
+            <property name="text">
+             <string>61639 85766</string>
+            </property>
+           </item>
+           <item row="76" column="0">
+            <property name="text">
+             <string>Santosh Nagar Hajrat Yunus</string>
+            </property>
+           </item>
+           <item row="76" column="1">
+            <property name="text">
+             <string>KATRAJ CHAUK,BILAYAT
+ BAKERY SAMORE,</string>
+            </property>
+           </item>
+           <item row="76" column="2">
+            <property name="text">
+             <string>89178 60118</string>
+            </property>
+           </item>
+           <item row="77" column="0">
+            <property name="text">
+             <string>Sasson General Hospital</string>
+            </property>
+           </item>
+           <item row="77" column="1">
+            <property name="text">
+             <string>Station road,Agarkar Nagar
+ Pune</string>
+            </property>
+           </item>
+           <item row="77" column="2">
+            <property name="text">
+             <string>91157 25244</string>
+            </property>
+           </item>
+           <item row="78" column="0">
+            <property name="text">
+             <string>Savitri Bai Phule Guruvar Peth</string>
+            </property>
+           </item>
+           <item row="78" column="1">
+            <property name="text">
+             <string>Shop No.718, Chhatrapati Shivaji Maharaj Rd,
+ Guruwar Peth, Pune,</string>
+            </property>
+           </item>
+           <item row="78" column="2">
+            <property name="text">
+             <string>72191 37282</string>
+            </property>
+           </item>
+           <item row="79" column="0">
+            <property name="text">
+             <string>SHANTABAI LADKAT CVC</string>
+            </property>
+           </item>
+           <item row="79" column="1">
+            <property name="text">
+             <string>370, Jawaharlal Nehru Rd, New Nana Peth, Ganesh Peth, Pune</string>
+            </property>
+           </item>
+           <item row="79" column="2">
+            <property name="text">
+             <string>79790 53944</string>
+            </property>
+           </item>
+           <item row="80" column="0">
+            <property name="text">
+             <string>shantabai ladkat school</string>
+            </property>
+           </item>
+           <item row="80" column="1">
+            <property name="text">
+             <string>370, Jawaharlal Nehru Rd, New Nana Peth, Ganesh Peth, Pune</string>
+            </property>
+           </item>
+           <item row="80" column="2">
+            <property name="text">
+             <string>83678 51771</string>
+            </property>
+           </item>
+           <item row="81" column="0">
+            <property name="text">
+             <string>SHARAD PAWAR BAHU U BHAVAN</string>
+            </property>
+           </item>
+           <item row="81" column="1">
+            <property name="text">
+             <string>GULABNAGAR DHANKAWADI</string>
+            </property>
+           </item>
+           <item row="81" column="2">
+            <property name="text">
+             <string>88407 34972</string>
+            </property>
+           </item>
+           <item row="82" column="0">
+            <property name="text">
+             <string>Shewale Hospital</string>
+            </property>
+           </item>
+           <item row="82" column="1">
+            <property name="text">
+             <string>Aundh Road ,Pune</string>
+            </property>
+           </item>
+           <item row="82" column="2">
+            <property name="text">
+             <string>67418 43616</string>
+            </property>
+           </item>
+           <item row="83" column="0">
+            <property name="text">
+             <string>Shiv Shankar Pote Hospital</string>
+            </property>
+           </item>
+           <item row="83" column="1">
+            <property name="text">
+             <string>ahakar Nagar, Govardhan Society, Parvati Paytha, Pune</string>
+            </property>
+           </item>
+           <item row="83" column="2">
+            <property name="text">
+             <string>88387 12907</string>
+            </property>
+           </item>
+           <item row="84" column="0">
+            <property name="text">
+             <string>Shivajinagar Police Hospital</string>
+            </property>
+           </item>
+           <item row="84" column="1">
+            <property name="text">
+             <string>1172, Modern Engineering College
+ Rd, Revenue Colony,
+ Shivajinagar, Pune</string>
+            </property>
+           </item>
+           <item row="84" column="2">
+            <property name="text">
+             <string>81674 51075</string>
+            </property>
+           </item>
+           <item row="85" column="0">
+            <property name="text">
+             <string>Shivane Dispensary</string>
+            </property>
+           </item>
+           <item row="85" column="1">
+            <property name="text">
+             <string>Shivane,Pune</string>
+            </property>
+           </item>
+           <item row="85" column="2">
+            <property name="text">
+             <string>788 750 6923</string>
+            </property>
+           </item>
+           <item row="86" column="0">
+            <property name="text">
+             <string>Shree Sadguru Shankar</string>
+            </property>
+           </item>
+           <item row="86" column="1">
+            <property name="text">
+             <string>Near KK Market Bibvewadi</string>
+            </property>
+           </item>
+           <item row="86" column="2">
+            <property name="text">
+             <string>73197 61904</string>
+            </property>
+           </item>
+           <item row="87" column="0">
+            <property name="text">
+             <string>SHREYASH GARDEN</string>
+            </property>
+           </item>
+           <item row="87" column="1">
+            <property name="text">
+             <string>35,MOHANNAGAR DHANKAWADI</string>
+            </property>
+           </item>
+           <item row="87" column="2">
+            <property name="text">
+             <string>79313 49252</string>
+            </property>
+           </item>
+           <item row="88" column="0">
+            <property name="text">
+             <string>Smart Clinic Baner</string>
+            </property>
+           </item>
+           <item row="88" column="1">
+            <property name="text">
+             <string>NEAR D-MART BANER PUNE</string>
+            </property>
+           </item>
+           <item row="88" column="2">
+            <property name="text">
+             <string>89175 71980</string>
+            </property>
+           </item>
+           <item row="89" column="0">
+            <property name="text">
+             <string>SRPF Group No 2 Wanvadi</string>
+            </property>
+           </item>
+           <item row="89" column="1">
+            <property name="text">
+             <string>SRPF GROUP NO 2 WANVADI PUNE</string>
+            </property>
+           </item>
+           <item row="89" column="2">
+            <property name="text">
+             <string>61216 86575</string>
+            </property>
+           </item>
+           <item row="90" column="0">
+            <property name="text">
+             <string>Sukhsagar Nagar Vasant More Hospital</string>
+            </property>
+           </item>
+           <item row="90" column="1">
+            <property name="text">
+             <string>NEAR RATHICHI VIHIR,
+ SUKHSAGARNAGAR</string>
+            </property>
+           </item>
+           <item row="90" column="2">
+            <property name="text">
+             <string>99419 58848</string>
+            </property>
+           </item>
+           <item row="91" column="0">
+            <property name="text">
+             <string>Sundarabai Ganpat Raut Hospital</string>
+            </property>
+           </item>
+           <item row="91" column="1">
+            <property name="text">
+             <string>Kelewadi Pune</string>
+            </property>
+           </item>
+           <item row="91" column="2">
+            <property name="text">
+             <string>79798 87709</string>
+            </property>
+           </item>
+           <item row="92" column="0">
+            <property name="text">
+             <string>Swargate Police Hospital</string>
+            </property>
+           </item>
+           <item row="92" column="1">
+            <property name="text">
+             <string>SWARGATE POLCE COLONY,
+ SWARGATE POLICE STATION</string>
+            </property>
+           </item>
+           <item row="92" column="2">
+            <property name="text">
+             <string>61279 83221</string>
+            </property>
+           </item>
+           <item row="93" column="0">
+            <property name="text">
+             <string>Tadiwala Road Dispensary</string>
+            </property>
+           </item>
+           <item row="93" column="1">
+            <property name="text">
+             <string>Upkendra Tadiwala Road,Ruby Hall Clinic</string>
+            </property>
+           </item>
+           <item row="93" column="2">
+            <property name="text">
+             <string>70182 63353</string>
+            </property>
+           </item>
+           <item row="94" column="0">
+            <property name="text">
+             <string>Tharkude Hospital</string>
+            </property>
+           </item>
+           <item row="94" column="1">
+            <property name="text">
+             <string>Erandwana Pune</string>
+            </property>
+           </item>
+           <item row="94" column="2">
+            <property name="text">
+             <string>61279 54062</string>
+            </property>
+           </item>
+           <item row="95" column="0">
+            <property name="text">
+             <string>UMARJI HEALTH CARE</string>
+            </property>
+           </item>
+           <item row="95" column="1">
+            <property name="text">
+             <string>BANER BALEWADI ROAD,BALEWADI</string>
+            </property>
+           </item>
+           <item row="95" column="2">
+            <property name="text">
+             <string>89187 98485</string>
+            </property>
+           </item>
+           <item row="96" column="0">
+            <property name="text">
+             <string>Uruli Devachi Dispensary</string>
+            </property>
+           </item>
+           <item row="96" column="1">
+            <property name="text">
+             <string>Uruli Devachi B.O, Haveli, Pune</string>
+            </property>
+           </item>
+           <item row="96" column="2">
+            <property name="text">
+             <string>73906 30206</string>
+            </property>
+           </item>
+           <item row="97" column="0">
+            <property name="text">
+             <string>Uttamnagar ZP school	</string>
+            </property>
+           </item>
+           <item row="97" column="1">
+            <property name="text">
+             <string>RAMNAGAR WARJE MALWADI GANPTI MATHA PUNE</string>
+            </property>
+           </item>
+           <item row="97" column="2">
+            <property name="text">
+             <string> 70830 02060</string>
+            </property>
+           </item>
+           <item row="98" column="0">
+            <property name="text">
+             <string>Vasti Clinic Viman nagar</string>
+            </property>
+           </item>
+           <item row="98" column="1">
+            <property name="text">
+             <string>Viman Nagar Vasti Clinic
+ Yamuna Nagar Pune</string>
+            </property>
+           </item>
+           <item row="98" column="2">
+            <property name="text">
+             <string>87075 90537</string>
+            </property>
+           </item>
+           <item row="99" column="0">
+            <property name="text">
+             <string>VEDANT NAGARI E LEARNING</string>
+            </property>
+           </item>
+           <item row="99" column="1">
+            <property name="text">
+             <string>GOSAVI WASTI KARVENAGAR</string>
+            </property>
+           </item>
+           <item row="99" column="2">
+            <property name="text">
+             <string>788 762 3298</string>
+            </property>
+           </item>
+           <item row="100" column="0">
+            <property name="text">
+             <string>Vilasrao Tambe Hospital</string>
+            </property>
+           </item>
+           <item row="100" column="1">
+            <property name="text">
+             <string>Near Junabai Mandir Last
+ Bus Stop Dhankawadi Pune</string>
+            </property>
+           </item>
+           <item row="100" column="2">
+            <property name="text">
+             <string>9172656533</string>
+            </property>
+           </item>
+           <item row="101" column="0">
+            <property name="text">
+             <string>VIMAN NAGAR JOGGERS PARK</string>
+            </property>
+           </item>
+           <item row="101" column="1">
+            <property name="text">
+             <string>JOGGERS PARK VIMAN NAGAR PUNE	</string>
+            </property>
+           </item>
+           <item row="101" column="2">
+            <property name="text">
+             <string>9850301051</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QFrame" name="frame_btns">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="rightMargin">
+             <number>5</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btn_minimize_5">
+              <property name="minimumSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>17</width>
+                <height>17</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Minimize</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 170, 0);
+}
+QPushButton:hover {	
+	background-color: rgba(255, 170, 0, 150);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_close_5">
+              <property name="minimumSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>17</width>
+                <height>17</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string>Close</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:hover {		
+	background-color: rgba(255, 0, 0, 150);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
